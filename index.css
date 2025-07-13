@@ -1,0 +1,478 @@
+
+:root {
+  --titulo: #FFFFFF;
+  --menu: #29341C;
+  --fundo: #C9BEAC;
+  --dourado: gold;
+  --texto: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+/* ========== ELEMENTOS GERAIS ========== */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--titulo);
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========== MENU E TOPO ========== */
+.menu {
+  background-color: var(--menu);
+  color: var(--titulo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.menu nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu nav a {
+  color: var(--titulo);
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0 12px;
+  transition: 0.3s;
+}
+
+.menu nav a:hover {
+  color: var(--dourado);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: var(--titulo);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu nav ul.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--menu);
+  padding: 1rem;
+  width: 100%;
+}
+
+/* ========== HERO ========== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.texto-hero {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+.texto-hero h1 {
+  font-size: 2.5rem;
+  color: var(--titulo);
+}
+
+.texto-hero p {
+  font-size: 1.2rem;
+}
+
+.imagem-hero img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+.botao-instagram-hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--menu);
+  color: var(--titulo);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.botao-instagram-hero:hover {
+  background-color: var(--dourado);
+  color: var(--texto);
+}
+
+.icone-insta {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+
+/* ========== BOTÕES ========== */
+.botao, .btn, .btn-dep {
+  display: inline-block;
+  background-color: var(--menu);
+  color: var(--titulo);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao:hover, .btn:hover, .btn-dep:hover {
+  background-color: var(--dourado);
+  color: var(--texto);
+}
+
+.botao {
+  margin-top: 1rem;
+}
+
+.botao-whats:hover {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+/* ========== LOGO ========== */
+.logo {
+  position: relative;
+  z-index: 10;
+}
+
+.logo-circular {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-circular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== SERVIÇOS ========== */
+.servicos ul {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.servicos li {
+  padding: 0.5rem 0;
+}
+
+.servico {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.servico img {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.servico h3 {
+  margin: 0 0 0.5rem;
+  color: var(--titulo);
+  font-size: 1.4rem;
+}
+
+.servico p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--texto);
+}
+
+.catalogo-contato {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.catalogo-contato p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== GALERIA ========== */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ========== SLIDERS ========== */
+.slider-container, .slider-depoimentos-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.slider-track, .slider-depoimentos-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide, .slide-depoimento {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img, .slide-depoimento img.foto-perfil {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.slide img {
+  width: 80%;
+  max-width: 280px;
+  height: auto;
+}
+
+.slide h3 {
+  color: var(--titulo);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.slide p, .slide-depoimento .texto {
+  color: var(--texto);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.slide-depoimento img.foto-perfil {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.slide-depoimento .nome {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: var(--titulo);
+}
+
+.slide-depoimento .estrelas {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ========== BOTÕES SLIDER ========== */
+.btn, .btn-dep {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.btn.anterior, .btn-dep.anterior-dep {
+  left: 10px;
+}
+
+.btn.proximo, .btn-dep.proximo-dep {
+  right: 10px;
+}
+
+/* ========== SOBRE NÓS ========== */
+.equipe-sobre {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.perfil-sobre {
+  text-align: center;
+  max-width: 200px;
+}
+
+.perfil-sobre img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nome-profissional {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--titulo);
+}
+
+.quem-somos-conteudo {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: var(--texto);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* == QUEM SOMOS + MAPA == */
+.quem-somos-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quem-somos-coluna {
+  flex: 1 1 400px;
+}
+
+.mapa-localizacao {
+  flex: 1 1 350px;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa-localizacao iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* ========== ÍCONES ========== */
+.link-instagram, .icone-whatsapp {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.link-instagram img,
+.icone-whatsapp img,
+.redes-rodape img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.link-instagram img:hover,
+.redes-rodape img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* ========== RODAPÉ ========== */
+.rodape {
+  background-color: var(--menu);
+  color: var(--titulo);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.redes-rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--menu);
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .menu nav ul.active {
+    display: flex;
+  }
+}
