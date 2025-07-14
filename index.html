@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliva Beauty</title>
+    <!-- Importa o arquivo CSS externo com os estilos do site -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Cabeçalho do site contendo logo e menu de navegação -->
+    <header class="menu">
+        <!-- Logotipo dentro de um círculo -->
+        <div class="logo">
+            <div class="logo-circular">
+                <img src="imagens/obsublogo.png" alt="Logo Oliva Beauty" class="logo-canto">
+            </div>
+            </div>
+        <!-- Botão visível apenas em telas pequenas -->
+        <div class="menu-toggle">&#9776;</div>
+        
+        <!-- Menu de navegação com âncoras para seções da página -->
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal com chamada de boas-vindas e imagem -->
+    <section class="hero">
+        <div class="texto-hero">
+            <h1>Seja Bem-vinda</h1>
+            <p>Oliva Beauty é mais do que um salão — é um espaço de renovação e cuidado. Inspirado na força da oliveira, aqui você encontra unhas impecáveis e uma experiência acolhedora que eleva sua autoestima.</p>
+            <!-- Botão que leva ao WhatsApp -->
+            <a href="https://wa.me/5511934346617" class="botao">Agende pelo WhatsApp</a>
+            <div class="icone-whatsapp">
+  <img src="icones/whatsapp.png" alt="Ícone WhatsApp">
+</div>
+        </div>
+        <div class="imagem-hero">
+            <!-- Imagem do espaço do estúdio -->
+            <img src="imagens/espacoimg.jpg" alt="Estúdio do Oliva Beauty">
+        </div>
+         <a href="https://www.instagram.com/studioolivab" target="_blank" class="botao-instagram-hero">
+    <img src="icones/instar.png" alt="Instagram" class="icone-insta"> Ver no Instagram
+  </a>
+    </section>
+
+    <!-- Seção "Sobre" apresentando as fundadoras -->
+    <section id="sobre">
+        <div class="quem-somos-layout">
+            <div class="quem-somos-coluna">
+                <h2>Quem somos</h2>
+  
+  <!-- Bloco de texto acima das imagens -->
+  <p class="quem-somos-conteudo"> Unimos nossa paixão e experiência para criar o Oliva Beauty: um espaço onde técnica e propósito andam lado a lado. Somos Pati e Amanda — e aqui, cada detalhe é pensado para que você se sinta única.</p>
+  <!-- Bloco com as imagens e nomes -->
+  <div class="equipe-sobre">
+    <div class="perfil-sobre">
+      <img src="sobrenos/amanda.png" alt="Amanda">
+      <p class="nome-profissional">Amanda</p>
+<a href="https://www.instagram.com/amandinhasmith_" target="_blank" class="link-instagram">
+    <img src="icones/insta.png" alt="Instagram Amanda">
+</a>
+    </div>
+    <div class="perfil-sobre">
+      <img src="sobrenos/pati.png" alt="Patrícia">
+      <p class="nome-profissional">Patrícia</p>
+<a href="https://www.instagram.com/pathydasunhas" target="_blank" class="link-instagram">
+    <img src="icones/insta.png" alt="Instagram Patrícia">
+</a>
+    </div>
+    </div>
+  </div>
+  <div class="mapa-localizacao">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234091.35423111927!2d-46.92992731328127!3d-23.54410229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce593d09073c73%3A0xb85514a7a57fa6ea!2sOliva%20beauty!5e0!3m2!1spt-BR!2sbr!4v1752278245771!5m2!1spt-BR!2sbr"
+        width="100" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"
+        </iframe>
+    </div>
+  </div>
+</section>
+</section>
+
+    <!-- Seção de Serviços com Carrossel -->
+<section id="servicos" class="servicos">
+        <h2>Serviços</h2>
+        <p style="margin-top:-1rem; font-size: 1.1rem;">Conheça os principais cuidados disponíveis no Oliva Beauty</p>
+
+    <!-- Container principal do carrossel -->
+    <div class="slider-container">
+        <!-- Faixa que contém todos os slides -->
+        <div class="slider-track">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="imagens/servico-maniped.jpg" alt="Manicure e Pedicure">
+                <h3>Manicure e Pedicure Tradicional</h3>
+                <p>Cuidado completo das unhas com cutilagem precisa e esmaltação impecável.</p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="imagens/servico-blindagem.jpg" alt="Blindagem">
+                <h3>Blindagem nas Unhas Naturais</h3>
+                <p>Fortalecimento com gel ou acrílico, mantendo o comprimento natural com mais resistência e beleza.</p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="imagens/servico-alongamento.jpg" alt="Alongamento">
+                <h3>Alongamento de Unhas</h3>
+                <p>Unhas alongadas com gel, fibra, acrílico ou poligel. Formatos: quadrada, amendoada, stiletto e bailarina.</p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="imagens/servico-manutencao.jpg" alt="Manutenção">
+                <h3>Manutenção</h3>
+                <p>Retoque e reestruturação de unhas alongadas, com reposição se necessário.</p>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <img src="imagens/servico-emgel.jpg" alt="Esmaltação em Gel">
+                <h3>Esmaltação em Gel</h3>
+                <p>Acabamento brilhante e duradouro nas mãos ou pés. Unhas impecáveis por mais tempo.</p>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide">
+                <img src="imagens/servico-spapes.jpg" alt="Spa dos Pés">
+                <h3>Spa dos Pés</h3>
+                <p>Esfoliação, hidratação e relaxamento profundo para os pés.</p>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide">
+                <img src="imagens/servico-tatto.jpg" alt="Tatto">
+                <h3>Serviços de Tatto</h3>
+                <p>Uma jóia em forma de Tatuagem e delicadeza.</p>
+            </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <button class="btn anterior">&#10094;</button>
+        <button class="btn proximo">&#10095;</button>
+    </div>
+
+    <!-- Chamada final para contato via WhatsApp -->
+    <div class="catalogo-contato">
+        <p>Consulte o catálogo completo diretamente pelo WhatsApp:</p>
+        <a href="https://wa.me/5511934346617" class="botao">Abrir no WhatsApp</a>
+        <div class="icone-whatsapp">
+  <img src="icones/whatsapp.png" alt="Ícone WhatsApp">
+</div>
+    </div>
+</section>
+    <!-- Seção de galeria com fotos de antes e depois -->
+    <section id="galeria" class="galeria">
+        <h2>Resultados reais</h2>
+        <p>Confira resultados de clientes que passaram pelas nossas mãos com carinho e técnica.</p>
+        <div class="grid-galeria">
+            <img src="imagens/alongamento.png" alt="alongamento de unhas">
+            <img src="imagens/blindagem.png" alt="blindagem">
+            <img src="imagens/manicure.jpg" alt="Spa dos pés">
+        </div>
+    </section>
+
+    <!-- Seção com depoimentos de clientes -->
+    <section id="depoimentos" class="depoimentos">
+  <h2>O que dizem sobre nós</h2>
+
+  <div class="slider-depoimentos-container">
+    <div class="slider-depoimentos-track">
+
+      <!-- Slide 1 -->
+      <div class="slide-depoimento">
+        <img src="comentarios/c1.png" alt="Kaoê Henrique" class="foto-perfil">
+        <h4 class="nome">Kaoê Henrique</h4>
+        <div class="estrelas">★★★★★</div>
+        <p class="texto">"Profissional excelente! Eu tenho um pouquinho de ansiedade e desde criança eu roo as unhas e a Pathy fez reconstrução uma vez com acrílico, outra vez com gel e ficou muito natural e bonito! Me ajudou a parar de roer unhas e toda vez que tenho uma recaída eu a procuro! Parabéns pelo profissionalismo 👏🏻👏🏻👏🏻"</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide-depoimento">
+        <img src="comentarios/c2.png" alt="Andrea Bernardes" class="foto-perfil">
+        <h4 class="nome">Andrea Bernardes</h4>
+        <div class="estrelas">★★★★★</div>
+        <p class="texto">"Ela é fantástica! Sou sua cliente e sua fã! Dedicação, excelência e resiliência fazem parte dessa profissional que é uma mulher maravilhosa. "Amo você minha amiga." ❤️"</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide-depoimento">
+        <img src="comentarios/c3.png" alt="Marilaine Costa" class="foto-perfil">
+        <h4 class="nome">Marilaine Costa</h4>
+        <div class="estrelas">★★★★★</div>
+        <p class="texto">"Ela é maravilhosa, cada vez que vou ela consegue fazer melhor. Desta vez ela arrasou. ❤️ Super recomendo, lugar aconchegante e de fácil acesso do ladinho do metrô."</p>
+      </div>
+
+    </div>
+
+    <!-- Botões -->
+    <button class="btn-dep anterior-dep">&#10094;</button>
+    <button class="btn-dep proximo-dep">&#10095;</button>
+  </div>
+</section>
+
+    <!-- Seção de contato com botão para agendamento -->
+    <section id="contato" class="contato">
+        <h2>Agende seu horário</h2>
+        <p>Entre em contato pelo WhatsApp clicando no botão abaixo:</p>
+        <a href="https://wa.me/5511934346617" class="botao">Falar com atendimento</a>
+        <div class="icone-whatsapp">
+  <img src="icones/whatsapp.png" alt="Ícone WhatsApp">
+</div>
+    </section>
+
+    <!-- Rodapé com direitos autorais e CNPJ -->
+    <footer class="rodape">
+        <p>© Oliva Beauty 2025 | Todos os direitos reservados</p>
+        <p>CNPJ: 00.000.000/0001-00</p>
+        <div class="redes-rodape">
+  <a href="https://wa.me/5511934346617" target="_blank" aria-label="WhatsApp">
+    <img src="icones/whatsapp.png" alt="WhatsApp">
+  </a>
+  <a href="https://www.instagram.com/studioolivab/" target="_blank" aria-label="Instagram">
+    <img src="icones/instar.png" alt="Instagram">
+  </a>
+</div>
+
+    </footer>
+<!-- Script JavaScript externo -->
+<script src="index.js"></script>
+</body>
+</html>
