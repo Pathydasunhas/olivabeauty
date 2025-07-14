@@ -343,6 +343,20 @@ a {
 .btn.proximo, .btn-dep.proximo-dep {
   right: 10px;
 }
+@media (max-width: 480px) {
+  .btn-dep.anterior-dep {
+    left: 0;
+  }
+
+  .btn-dep.proximo-dep {
+    right: 0;
+  }
+
+  .slide-depoimento .texto {
+    padding: 0 2rem; /* aumenta a margem interna para evitar toque nos botões */
+  }
+}
+
 
 /* ========== SOBRE NÓS ========== */
 .equipe-sobre {
