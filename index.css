@@ -106,6 +106,7 @@ a {
   max-width: 50%;
   height: auto;
   border-radius: 10px;
+  text-align: center;
 }
 .botao-instagram-hero {
   display: inline-flex;
